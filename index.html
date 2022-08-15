@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/c46f4012da.js" crossorigin="anonymous"></script>
+    <title>UX DESIGN DEN</title>
+
+</head>
+<body>       
+  <div class="container" id="container">              
+    <!-- Side Navigation -->
+<nav id="sideNav">     
+   
+    <ul id="sideNavList">     
+        
+               <li class="sideNav">
+            <a href="https://codepen.io/dacodabx" target="_blank">
+                <img src="codepen.png" title="my code" >
+            </a>
+            </li>       
+           
+            <li class="sideNav">
+                <a href="https://www.behance.net/kwanzaedwards" target="_blank">
+                <img src="behance2.png" title="my art">
+                </a>
+            </li>        
+       
+            <li class="sideNav">
+                <a href="https://www.upwork.com/freelancers/~017b16d9028d62b13e" target="_blank">
+                <img src="up.png" title="contact me">
+                </a>
+                </li>    
+        
+    </ul>
+</nav>   
+    <img  id="view" src="view.png" alt="collage art">          
+    <p id="swanE">SWAN EDWARDS</p>
+    <p id="frontEnd">FRONTEND<br>DEVELOPER</p>       
+ 
+</div>
+
+<!-- Quote Container -->
+<div class="containerBody">
+<div class="quote-container" id="quote-container">
+  <!-- Quote -->
+  <div class="quote text">
+      <i class="fas fa-quote-left"></i>
+      <span id="quote"></span>
+  </div>
+  <!-- Author -->
+  <div class="quote-author">
+      <span id="author"></span>
+  </div>
+  <!-- Buttons -->
+  <div class="button-container">
+      <button class="twitter-button" id="twitter" title="Tweet This">
+          <i class="fab fa-twitter"></i>
+      </button>
+      <button id="new-quote">New Quote</button>
+  </div>
+
+</div>
+<!-- Loader -->
+<div class="loader" id="loader"></div>
+
+</div>
+
+<!-- Sneakers Demo Box White -->
+<div class="sneakerBox">
+<!-- Sneaker Demo -->
+    <div class="containerSneakers">   
+
+        <div class="mySneakers">      
+            <img src="lVSneaker.png" style="width:65%" >
+         </div>  
+        <div class="mySneakers">      
+            <img src="lVSneaker2.png" style="width:65%" >
+        </div>  
+        <div class="mySneakers">      
+            <img src="lVSneaker3.png" style="width:65%">
+        </div>      
+        <div class="mySneakers">     
+            <img src="lVSneaker4.png" style="width:65%">
+         </div>  
+        <div class="mySneakers">    
+            <img src="lVSneaker5.png" style="width:65%">
+        </div>     
+   
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+          <img class="demo cursor" src="lVSneaker.png" style="width:100%" onclick="currentSlide(1)" alt="CLASSICS">
+        </div>    
+      <div class="column">
+        <img class="demo cursor" src="lVSneaker2.png" style="width:100%" onclick="currentSlide(2)" alt="NY CANDY APPLE">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="lVSneaker3.png" style="width:100%" onclick="currentSlide(3)" alt="COMPTON SKY">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="lVSneaker4.png" style="width:100%" onclick="currentSlide(4)" alt="PURPLE MOUNTAINS">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="lVSneaker5.png"  style="width:100%" onclick="currentSlide(5)" alt="GUAP GREEN">        
+      </div>     
+      
+    </div>
+  </div>
+</div>
+
+<!-- Calculator -->
+<div class="calcBox"> 
+    <div class="calcContainer">
+    <div class="calc">
+        <input type="text" id="inputext" placeholder="0">
+        <button onclick="clr()" class="calBut">C</button>
+        <button onclick="del()" class="calBut">DEL</button>
+        <button onclick="calculate('%')" class="calBut">%</button>
+        <button onclick="calculate('/')" class="calBut">/</button>
+        <button onclick="calculate(7)" class="calBut">7</button>
+        <button onclick="calculate(8)" class="calBut">8</button>
+        <button onclick="calculate(9)" class="calBut">9</button>
+        <button onclick="calculate('*')" class="calBut">*</button>
+        <button onclick="calculate(4)" class="calBut">4</button>
+        <button onclick="calculate(5)" class="calBut">5</button>
+        <button onclick="calculate(6)" class="calBut">6</button>
+        <button onclick="calculate('-')" class="calBut">-</button>
+        <button onclick="calculate(1)" class="calBut">1</button>
+        <button onclick="calculate(2)" class="calBut">2</button>
+        <button onclick="calculate(3)" class="calBut">3</button>
+        <button onclick="calculate('+')" class="calBut">+</button>
+        <button onclick="calculate('.')" class="calBut">.</button>
+        <button onclick="calculate(0)" class="calBut">0</button>
+        <button onclick="Result()" class="calBut" id="equalB">=</button>
+    </div>
+    </div>
+</div>
+
+<!-- Counter -->
+ <div class="counterBox">
+    <div class="counterContainer">
+   <p id="think">Think Bigger Bitch!</p>
+    <div class="countdown">
+        <div id="day">na</div>
+        <div id="hour">na</div>
+        <div id="minute">na</div>
+        <div id="second">na</div>
+    </div> 
+</div>   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+   
+</body>
+</html>

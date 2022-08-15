@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+}
+.container{  
+    display: flex; 
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+   align-items: left;
+    width: fit-content;
+    height: 45rem;  
+    background-color: black;     
+}
+#sideNav{    
+    position: fixed;
+    top: 14rem;
+    left:2rem;
+    z-index: 100;   
+ }
+#sideNavList{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style-type: none;
+ }
+ .sideNav{
+    margin: 7px 0;
+    z-index: 2;
+ }
+ .sideNav:hover{
+    transform: translateY(4px)
+ }
+.sideNav img{
+   width: 1.5rem;
+   background-color: rgb(255, 255, 255);
+   border-radius: 50%;    
+    padding: 2px;
+   cursor: pointer;
+   z-index: 3;
+ }
+ 
+ 
+
+#view{
+    position: relative;
+    width: 50rem;
+    bottom: 2rem;
+    transform: rotate(25deg);
+    z-index: 5;
+}
+
+#swanE{
+   display: flex;
+   align-items: center;
+    position: relative;
+    bottom: 2rem;
+    padding: 5px 2px;
+    /* left: 3.5rem; */
+    color:whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1rem; 
+    opacity: .7;
+    z-index: 1;
+}
+#frontEnd{
+    position: relative;
+    bottom: 1rem;
+    /* left: 3rem; */
+    color: white;
+    font-family: 'Montserrat', sans-serif;    
+    letter-spacing: 1rem;
+    font-size: 5rem;
+    padding-top: .5rem;
+    z-index: 4;
+}
+
+/* Quote */
+.containerBody{
+margin: 0;
+height: fit-content;
+padding: 3rem 0px;
+background-color: rgb(10, 156, 229);
+color: black;
+font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.quote-container{
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: url('Paper.png');
+    box-shadow: 0 10px 10px 10px rgba(0, 0,0, 0.2);
+}
+#quote {
+    font-size:2.75rem;
+    
+}
+.long_quote {
+    font-size: 2rem;
+}
+.fa-quote-left {
+    font-size: 4rem;
+}
+.quote-author{
+    margin-top: 15px;
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.button-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;    
+}
+#new-quote{
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+.twitter-button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #333;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+button:hover{
+    filter: brightness(100%);
+}
+button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+.twitter-button:hover{
+    color: #38a1f3;
+}
+.fa-twitter {
+    font-size: 1.5rem;
+}
+
+/* Loader */
+.loader {
+    border: 16px solid rgb(177, 168, 168);
+    border-top: 16px solid rgb(25, 25, 146);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @media  screen and (max-width: 1000px) {
+    .container{
+        margin: auto 10px;
+        font-size: 1rem;
+    }
+    #sideNav{    
+        position: fixed;
+        top: 10rem;
+        left:2rem;
+        z-index: 100;   
+     }
+    #swanE{
+        letter-spacing: .5rem; 
+        left: 1.5rem;
+    }
+    #frontEnd{
+        font-size:2rem;
+        left: 1.5rem;
+    }
+    #view{
+       
+        width: 25rem;
+    }
+    .quote-container {
+        margin: auto 10px;
+    }
+    #quote{
+        font-size: 2.5rem;
+    }
+}
+/* Sneaker Box */
+.sneakerBox{
+    width: 100vw;
+    height: fit-content;
+    background-color: white;
+}
+.demo {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .containerSneakers {
+    position: relative;
+    width: 80vw;
+    margin: auto;    
+    top: 3rem;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 10px 10px 7px grey;
+  }
+  
+  /* Hide the images by default */
+  .mySneakers {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(6, 6, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(29, 29, 27, 0.8);
+  }
+  
+    
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: transparent;
+    padding: 2px 16px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    padding: .5rem;
+    color: rgb(9, 3, 3);
+  }
+  .row{
+    padding-bottom: 1rem;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+ 
+  /* Calculator */
+
+  .calcBox{
+   padding-top: 9rem;
+    height: fit-content;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255); 
+    /* background-image: url('dj.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+   
+}
+  .calcContainer{
+    background-image: url('dj.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+.calc{    
+    box-shadow: 10px 10px 7px rgb(10, 10, 10);
+    border-radius: 2rem rgb(21, 21, 21);
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 4rem);
+}
+input{
+    grid-column: span 4;
+    height: 4rem;
+    width: 16rem;
+    box-shadow: inset -6px -6px 6px rgb(255, 255, 255),
+                inset 6px 6px 13px rgb(102, 100, 100);
+    border: none;
+    border-radius: 2rem;
+    color:rgb(6, 6, 6);
+    text-align: end;
+    margin: 2.5rem 0 3rem 0;
+    padding: 2rem;
+    font-size: 3rem;
+}
+.calBut{
+    box-shadow:  inset 6px 6px 13px rgb(255, 255, 255),
+     6px 6px 13px rgb(102, 100, 100); 
+     border: none; 
+     border-radius: 50%; 
+     width: 50px;
+     height: 50px;
+     margin: .75rem;
+     font-weight: bold;
+     font-size: 20px;
+}   
+#equalB{
+   width: 7rem;
+   border-radius: 1.5rem;
+   box-shadow:  inset 6px 6px 13px rgb(255, 255, 255),
+   6px 6px 13px rgb(102, 100, 100);
+
+}
+
+/* Counter */
+.counterBox{
+   
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(247, 198, 255), rgb(231, 135, 211));
+    width: 100vw;
+    height: 100vh;
+}
+.counterContainer {
+    position: relative;
+    top: 7rem;
+    width: 80vw;
+    height: 80vh;
+    margin: auto;   
+    background: rgb(0, 0, 0);
+    background-attachment: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5) ; 
+   
+}
+ #think { 
+    position: relative;
+    bottom: 3rem;
+    color: rgb(252, 10, 159);    
+    left: -30px;
+    font-family: 'Sacramento', cursive;
+    font-size: 5rem;
+   
+}
+
+.countdown {
+    display: flex;
+ 
+}
+.countdown div {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    /* line-height: 12rem; */
+    text-align: center;
+    background: rgb(0, 0, 0);
+    margin: 0 2rem;
+    font-size: 7rem;
+    font-weight: 900;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(252, 248, 248);
+  
+}
+.countdown div:before {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+    width:100%;
+    height: 2rem;
+    background: rgb(0, 0, 0);
+    color: rgb(241, 234, 238);
+    line-height: 2rem;
+    font-size: large;
+    font-family: 'Orbitron', sans-serif;
+ 
+}
+.countdown div#day:before {
+    content: "Days"
+}
+.countdown div#hour:before {
+    content: "Hours"
+}
+.countdown div#minute:before {
+    content: "Minutes"
+}
+.countdown div#second:before {
+    content: "Seconds"
+}
+
+@media only screen and (max-width: 810px) {
+    .countdown div {
+        position: relative;
+        width: fit-content;
+        height: fit-content;       
+        text-align: center;
+        background: rgb(0, 0, 0);
+        margin: 0 1rem;
+        font-size: 4rem;
+        font-weight: 900;
+        font-family: 'Orbitron', sans-serif;
+        color: rgb(252, 248, 248);
+      
+    }
+   #think{
+    font-size: 2.5rem;
+    left: .1rem;
+   
+   }
+
+}
+
+@media only screen and (max-width: 428px){
+    .counterContainer{
+        width: 100vw;
+        margin: auto;
+    }
+    .countdown div { 
+        display: flex;   
+        flex-direction: row;    
+        margin: 0 2rem;
+        font-size: 1rem;  
+        font-weight: 700;
+        right: 1rem;        
+      
+    }
+    
+    
+
+   
+}
